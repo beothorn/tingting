@@ -1,0 +1,56 @@
+[gd_scene load_steps=11 format=3 uid="uid://tyw88vtsnixb"]
+
+[ext_resource type="Script" path="res://Bubble/Bubble.gd" id="1_6u502"]
+[ext_resource type="Texture2D" uid="uid://w3xq1q63n1a6" path="res://Bubble/Contents/yellowBall.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://pfarc3754v4o" path="res://Bubble/Contents/blueBall.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://u8d2ul3vass" path="res://Bubble/Contents/greenBall.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://ckcf0wmvpnxks" path="res://Bubble/Contents/redBall.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://d0fbgfgrhmswu" path="res://Bubble/Contents/purpleBall.png" id="6"]
+[ext_resource type="PackedScene" uid="uid://1uca6qityn6s" path="res://Counter.tscn" id="7"]
+[ext_resource type="PackedScene" uid="uid://clm7ap5pihkma" path="res://Bubble/BubbleSprite.tscn" id="8"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_80v45"]
+
+[sub_resource type="SpriteFrames" id="1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}],
+"loop": false,
+"name": &"big",
+"speed": 0.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"medium",
+"speed": 5.0
+}]
+
+[node name="Bubble" type="StaticBody2D"]
+collision_layer = 2
+physics_material_override = SubResource("PhysicsMaterial_80v45")
+script = ExtResource("1_6u502")
+
+[node name="Content" type="AnimatedSprite2D" parent="."]
+visible = false
+sprite_frames = SubResource("1")
+animation = &"big"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Counter" parent="." instance=ExtResource("7")]
+
+[node name="Bubble" parent="." instance=ExtResource("8")]

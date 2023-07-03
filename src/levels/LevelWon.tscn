@@ -1,0 +1,82 @@
+[gd_scene load_steps=8 format=3 uid="uid://cjj56yvhm323g"]
+
+[ext_resource type="Script" path="res://levels/LevelWon.gd" id="1_2frxv"]
+[ext_resource type="Texture2D" uid="uid://dc01qx7uo34s6" path="res://img/background_gray.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://mvsqwtvaym6n" path="res://img/stars_0.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://bp1lvgo1mwf05" path="res://img/stars_1.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://b5tyjn1kbjham" path="res://img/stars_2.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://blboo8jd4nnlx" path="res://img/stars_3.png" id="7"]
+
+[sub_resource type="SpriteFrames" id="1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="LevelWon" type="Node2D"]
+script = ExtResource("1_2frxv")
+
+[node name="background_gray" type="Sprite2D" parent="."]
+z_index = -1
+texture = ExtResource("2")
+centered = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_top = 100.0
+offset_right = 1080.0
+offset_bottom = 747.0
+
+[node name="game_over_msg" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Level Cleared!"
+
+[node name="score" type="Container" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 0
+
+[node name="stars" type="AnimatedSprite2D" parent="VBoxContainer/score"]
+scale = Vector2(0.2, 0.2)
+sprite_frames = SubResource("1")
+centered = false
+
+[node name="next_level" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Next Level"
+
+[node name="retry_level" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Retry"
+
+[node name="main_menu" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Main menu"
+
+[node name="quit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/next_level" to="." method="_on_next_level_pressed"]
+[connection signal="pressed" from="VBoxContainer/retry_level" to="." method="_on_retry_level_pressed"]
+[connection signal="pressed" from="VBoxContainer/main_menu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_quit_pressed"]

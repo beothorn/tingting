@@ -1,0 +1,38 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Tingting"
+run/main_scene="res://levels/PrivacyPolicyAgreement.tscn"
+config/quit_on_go_back=false
+config/features=PackedStringArray("4.0")
+boot_splash/fullsize=false
+config/icon="res://img/yellow_ball.png"
+
+[display]
+
+window/size/viewport_width=1080
+window/size/viewport_height=2340
+window/handheld/orientation=1
+window/size/width=1080
+window/size/height=1980
+window/size/test_width=270
+window/size/test_height=495
+
+[layer_names]
+
+2d_physics/layer_1="Ball"
+2d_physics/layer_2="Block"
+
+[rendering]
+
+textures/vram_compression/import_etc2_astc=true
+environment/default_environment="res://default_env.tres"

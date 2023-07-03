@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://bgajhltwlhwi8"]
+
+[ext_resource type="Script" path="res://levels/Level.gd" id="1_134jk"]
+[ext_resource type="PackedScene" uid="uid://dyk36846dkjdd" path="res://BallGenerator.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://rnaytep361ey" path="res://levels/GameLevels/helloWorld2.png" id="3"]
+[ext_resource type="PackedScene" uid="uid://tyw88vtsnixb" path="res://Bubble/Bubble.tscn" id="4"]
+
+[node name="current_level" type="Node"]
+script = ExtResource("1_134jk")
+
+[node name="Node2D" type="Node2D" parent="."]
+z_index = -2
+
+[node name="ColorRect" type="ColorRect" parent="Node2D"]
+offset_right = 1080.0
+offset_bottom = 4000.0
+color = Color(1, 0.351562, 0, 1)
+
+[node name="BallGenerator" parent="." instance=ExtResource("2")]
+position = Vector2(50, 62)
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -1
+texture = ExtResource("3")
+centered = false
+
+[node name="Bubble" parent="." instance=ExtResource("4")]
+position = Vector2(960, 1290)
+size = 2
+content_type = 2
+hit_count = 3

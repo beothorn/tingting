@@ -1,0 +1,138 @@
+[gd_scene load_steps=5 format=3 uid="uid://bloatkfqhupcr"]
+
+[ext_resource type="Script" path="res://levels/Level.gd" id="1_h63tw"]
+[ext_resource type="Texture2D" uid="uid://b55ewt8c0s5l5" path="res://levels/GameLevels/helloWorld4.png" id="2"]
+[ext_resource type="PackedScene" uid="uid://dyk36846dkjdd" path="res://BallGenerator.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://tyw88vtsnixb" path="res://Bubble/Bubble.tscn" id="4"]
+
+[node name="current_level" type="Node"]
+script = ExtResource("1_h63tw")
+
+[node name="Node2D" type="Node2D" parent="."]
+z_index = -2
+
+[node name="ColorRect" type="ColorRect" parent="Node2D"]
+offset_right = 1080.0
+offset_bottom = 4000.0
+color = Color(0.0484009, 0.476562, 0, 1)
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -1
+texture = ExtResource("2")
+centered = false
+
+[node name="BallGenerator" parent="." instance=ExtResource("3")]
+position = Vector2(50, 62)
+
+[node name="Bubble41" parent="." instance=ExtResource("4")]
+position = Vector2(372, 1032)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
+
+[node name="Bubble32" parent="." instance=ExtResource("4")]
+position = Vector2(402, 982)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
+
+[node name="Bubble44" parent="." instance=ExtResource("4")]
+position = Vector2(732, 1032)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
+
+[node name="Bubble43" parent="." instance=ExtResource("4")]
+position = Vector2(492, 1032)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
+
+[node name="Bubble30" parent="." instance=ExtResource("4")]
+position = Vector2(522, 982)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
+
+[node name="Bubble47" parent="." instance=ExtResource("4")]
+position = Vector2(612, 1032)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
+
+[node name="Bubble38" parent="." instance=ExtResource("4")]
+position = Vector2(642, 982)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
+
+[node name="Bubble48" parent="." instance=ExtResource("4")]
+position = Vector2(432, 1032)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
+
+[node name="Bubble39" parent="." instance=ExtResource("4")]
+position = Vector2(462, 982)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
+
+[node name="Bubble46" parent="." instance=ExtResource("4")]
+position = Vector2(552, 1032)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
+
+[node name="Bubble37" parent="." instance=ExtResource("4")]
+position = Vector2(582, 982)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
+
+[node name="Bubble45" parent="." instance=ExtResource("4")]
+position = Vector2(672, 1032)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
+
+[node name="Bubble28" parent="." instance=ExtResource("4")]
+position = Vector2(702, 982)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
+
+[node name="Bubble9" parent="." instance=ExtResource("4")]
+position = Vector2(190, 1622)
+
+[node name="Bubble12" parent="." instance=ExtResource("4")]
+position = Vector2(530, 1622)
+
+[node name="Bubble13" parent="." instance=ExtResource("4")]
+position = Vector2(850, 1622)

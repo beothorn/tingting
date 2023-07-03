@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://dyk36846dkjdd"]
+
+[ext_resource type="Texture2D" uid="uid://pbbqvg51tmbd" path="res://img/BallSource.png" id="1"]
+[ext_resource type="Script" path="res://BallGenerator.gd" id="2"]
+[ext_resource type="PackedScene" uid="uid://1uca6qityn6s" path="res://Counter.tscn" id="3"]
+
+[node name="BallGenerator" type="Sprite2D"]
+position = Vector2(50, 40)
+texture = ExtResource("1")
+script = ExtResource("2")
+
+[node name="Counter" parent="." instance=ExtResource("3")]
+position = Vector2(-0.277157, -1.04526)
+scale = Vector2(0.666667, 0.666667)

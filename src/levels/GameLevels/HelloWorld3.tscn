@@ -1,0 +1,81 @@
+[gd_scene load_steps=5 format=3 uid="uid://dp5ib4q6qopyd"]
+
+[ext_resource type="Script" path="res://levels/Level.gd" id="1_brqft"]
+[ext_resource type="Texture2D" uid="uid://cys00u7282s00" path="res://levels/GameLevels/helloWorld3.png" id="2"]
+[ext_resource type="PackedScene" uid="uid://dyk36846dkjdd" path="res://BallGenerator.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://tyw88vtsnixb" path="res://Bubble/Bubble.tscn" id="4"]
+
+[node name="current_level" type="Node"]
+script = ExtResource("1_brqft")
+
+[node name="Node2D" type="Node2D" parent="."]
+z_index = -2
+
+[node name="ColorRect" type="ColorRect" parent="Node2D"]
+offset_right = 1080.0
+offset_bottom = 4000.0
+color = Color(0.343783, 0.241638, 0.835938, 1)
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -1
+texture = ExtResource("2")
+centered = false
+
+[node name="BallGenerator" parent="." instance=ExtResource("3")]
+position = Vector2(50, 62)
+ball_index = 2
+
+[node name="Bubble" parent="." instance=ExtResource("4")]
+position = Vector2(800, 1103)
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
+
+[node name="Bubble2" parent="." instance=ExtResource("4")]
+position = Vector2(722, 1215)
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
+
+[node name="Bubble4" parent="." instance=ExtResource("4")]
+position = Vector2(1000, 1211)
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
+
+[node name="Bubble3" parent="." instance=ExtResource("4")]
+position = Vector2(802, 1315)
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
+
+[node name="Bubble9" parent="." instance=ExtResource("4")]
+position = Vector2(260, 1581)
+size = 4
+content_type = 4
+hit_count = 15
+
+[node name="Bubble8" parent="." instance=ExtResource("4")]
+position = Vector2(930, 1103)
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
+
+[node name="Bubble10" parent="." instance=ExtResource("4")]
+position = Vector2(870, 1213)
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
+
+[node name="Bubble11" parent="." instance=ExtResource("4")]
+position = Vector2(932, 1315)
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false

@@ -1,0 +1,421 @@
+[gd_scene load_steps=5 format=3 uid="uid://8gxlp6o84i8j"]
+
+[ext_resource type="Script" path="res://levels/Level.gd" id="1_5nbxk"]
+[ext_resource type="PackedScene" uid="uid://dyk36846dkjdd" path="res://BallGenerator.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://cysarvs4to27c" path="res://img/background_green.png" id="3"]
+[ext_resource type="PackedScene" uid="uid://tyw88vtsnixb" path="res://Bubble/Bubble.tscn" id="4"]
+
+[node name="current_level" type="Node"]
+script = ExtResource("1_5nbxk")
+
+[node name="BallGenerator" parent="." instance=ExtResource("2")]
+position = Vector2(50, 62)
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -1
+texture = ExtResource("3")
+centered = false
+
+[node name="Bubble" parent="." instance=ExtResource("4")]
+position = Vector2(260, 740)
+size = 4
+content_type = 0
+
+[node name="Bubble18" parent="." instance=ExtResource("4")]
+position = Vector2(870, 740)
+size = 4
+content_type = 0
+
+[node name="Bubble2" parent="." instance=ExtResource("4")]
+position = Vector2(64, 1088)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble33" parent="." instance=ExtResource("4")]
+position = Vector2(64, 2027)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble3" parent="." instance=ExtResource("4")]
+position = Vector2(128, 1088)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble32" parent="." instance=ExtResource("4")]
+position = Vector2(128, 2027)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble22" parent="." instance=ExtResource("4")]
+position = Vector2(128, 1216)
+content_type = 2
+
+[node name="Bubble4" parent="." instance=ExtResource("4")]
+position = Vector2(192, 1088)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble31" parent="." instance=ExtResource("4")]
+position = Vector2(192, 2027)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble5" parent="." instance=ExtResource("4")]
+position = Vector2(256, 1088)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble43" parent="." instance=ExtResource("4")]
+position = Vector2(256, 2027)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble6" parent="." instance=ExtResource("4")]
+position = Vector2(320, 1088)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble35" parent="." instance=ExtResource("4")]
+position = Vector2(320, 2027)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble23" parent="." instance=ExtResource("4")]
+position = Vector2(384, 1216)
+content_type = 2
+
+[node name="Bubble25" parent="." instance=ExtResource("4")]
+position = Vector2(384, 1408)
+size = 2
+content_type = 4
+
+[node name="Bubble7" parent="." instance=ExtResource("4")]
+position = Vector2(384, 1088)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble30" parent="." instance=ExtResource("4")]
+position = Vector2(384, 2027)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble8" parent="." instance=ExtResource("4")]
+position = Vector2(448, 1088)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble34" parent="." instance=ExtResource("4")]
+position = Vector2(448, 2027)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble9" parent="." instance=ExtResource("4")]
+position = Vector2(512, 1088)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble42" parent="." instance=ExtResource("4")]
+position = Vector2(512, 2027)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble19" parent="." instance=ExtResource("4")]
+position = Vector2(551, 1216)
+content_type = 2
+
+[node name="Bubble24" parent="." instance=ExtResource("4")]
+position = Vector2(551, 1664)
+size = 3
+content_type = 3
+
+[node name="Bubble26" parent="." instance=ExtResource("4")]
+position = Vector2(550, 1860)
+size = 3
+content_type = 3
+
+[node name="Bubble47" parent="." instance=ExtResource("4")]
+position = Vector2(551, 2212)
+size = 3
+content_type = 3
+
+[node name="Bubble59" parent="." instance=ExtResource("4")]
+position = Vector2(551, 2454)
+size = 3
+content_type = 3
+
+[node name="Bubble60" parent="." instance=ExtResource("4")]
+position = Vector2(211, 2674)
+content_type = 3
+
+[node name="Bubble68" parent="." instance=ExtResource("4")]
+position = Vector2(211, 2984)
+content_type = 3
+
+[node name="Bubble70" parent="." instance=ExtResource("4")]
+position = Vector2(211, 3344)
+content_type = 3
+
+[node name="Bubble65" parent="." instance=ExtResource("4")]
+position = Vector2(391, 2833)
+content_type = 3
+
+[node name="Bubble69" parent="." instance=ExtResource("4")]
+position = Vector2(391, 3143)
+content_type = 3
+
+[node name="Bubble71" parent="." instance=ExtResource("4")]
+position = Vector2(391, 3503)
+content_type = 3
+
+[node name="Bubble61" parent="." instance=ExtResource("4")]
+position = Vector2(881, 2674)
+content_type = 3
+
+[node name="Bubble66" parent="." instance=ExtResource("4")]
+position = Vector2(881, 2984)
+content_type = 3
+
+[node name="Bubble74" parent="." instance=ExtResource("4")]
+position = Vector2(881, 3344)
+content_type = 3
+
+[node name="Bubble64" parent="." instance=ExtResource("4")]
+position = Vector2(721, 2833)
+content_type = 3
+
+[node name="Bubble67" parent="." instance=ExtResource("4")]
+position = Vector2(721, 3143)
+content_type = 3
+
+[node name="Bubble73" parent="." instance=ExtResource("4")]
+position = Vector2(721, 3503)
+content_type = 3
+
+[node name="Bubble62" parent="." instance=ExtResource("4")]
+position = Vector2(551, 2674)
+content_type = 3
+
+[node name="Bubble63" parent="." instance=ExtResource("4")]
+position = Vector2(551, 2984)
+content_type = 3
+
+[node name="Bubble72" parent="." instance=ExtResource("4")]
+position = Vector2(551, 3344)
+content_type = 3
+
+[node name="Bubble75" parent="." instance=ExtResource("4")]
+position = Vector2(551, 3264)
+content_type = 3
+
+[node name="Bubble76" parent="." instance=ExtResource("4")]
+position = Vector2(551, 3184)
+content_type = 3
+
+[node name="Bubble77" parent="." instance=ExtResource("4")]
+position = Vector2(551, 3104)
+content_type = 3
+
+[node name="Bubble28" parent="." instance=ExtResource("4")]
+position = Vector2(920, 1780)
+size = 3
+content_type = 3
+
+[node name="Bubble46" parent="." instance=ExtResource("4")]
+position = Vector2(851, 2212)
+size = 3
+content_type = 3
+
+[node name="Bubble29" parent="." instance=ExtResource("4")]
+position = Vector2(221, 1784)
+size = 3
+content_type = 3
+
+[node name="Bubble48" parent="." instance=ExtResource("4")]
+position = Vector2(251, 2212)
+size = 3
+content_type = 3
+
+[node name="Bubble10" parent="." instance=ExtResource("4")]
+position = Vector2(576, 1088)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble36" parent="." instance=ExtResource("4")]
+position = Vector2(576, 2027)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble11" parent="." instance=ExtResource("4")]
+position = Vector2(640, 1088)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble44" parent="." instance=ExtResource("4")]
+position = Vector2(640, 2027)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble12" parent="." instance=ExtResource("4")]
+position = Vector2(704, 1088)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble38" parent="." instance=ExtResource("4")]
+position = Vector2(704, 2027)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble20" parent="." instance=ExtResource("4")]
+position = Vector2(704, 1216)
+content_type = 2
+
+[node name="Bubble21" parent="." instance=ExtResource("4")]
+position = Vector2(704, 1408)
+size = 2
+content_type = 4
+
+[node name="Bubble13" parent="." instance=ExtResource("4")]
+position = Vector2(768, 1088)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble41" parent="." instance=ExtResource("4")]
+position = Vector2(768, 2027)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble52" parent="." instance=ExtResource("4")]
+position = Vector2(768, 1957)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble57" parent="." instance=ExtResource("4")]
+position = Vector2(68, 1957)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble14" parent="." instance=ExtResource("4")]
+position = Vector2(832, 1088)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble39" parent="." instance=ExtResource("4")]
+position = Vector2(832, 2027)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble50" parent="." instance=ExtResource("4")]
+position = Vector2(832, 1957)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble55" parent="." instance=ExtResource("4")]
+position = Vector2(132, 1957)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble15" parent="." instance=ExtResource("4")]
+position = Vector2(896, 1088)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble37" parent="." instance=ExtResource("4")]
+position = Vector2(896, 2027)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble49" parent="." instance=ExtResource("4")]
+position = Vector2(896, 1957)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble54" parent="." instance=ExtResource("4")]
+position = Vector2(196, 1957)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble27" parent="." instance=ExtResource("4")]
+position = Vector2(960, 1216)
+content_type = 2
+
+[node name="Bubble16" parent="." instance=ExtResource("4")]
+position = Vector2(960, 1088)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble40" parent="." instance=ExtResource("4")]
+position = Vector2(960, 2027)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble51" parent="." instance=ExtResource("4")]
+position = Vector2(960, 1957)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble56" parent="." instance=ExtResource("4")]
+position = Vector2(260, 1957)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble17" parent="." instance=ExtResource("4")]
+position = Vector2(1024, 1088)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble45" parent="." instance=ExtResource("4")]
+position = Vector2(1024, 2027)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble53" parent="." instance=ExtResource("4")]
+position = Vector2(1024, 1957)
+size = 0
+content_type = 0
+retrieve_content = true
+
+[node name="Bubble58" parent="." instance=ExtResource("4")]
+position = Vector2(324, 1957)
+size = 0
+content_type = 0
+retrieve_content = true

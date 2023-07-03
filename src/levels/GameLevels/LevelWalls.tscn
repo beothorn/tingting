@@ -1,0 +1,100 @@
+[gd_scene load_steps=6 format=3 uid="uid://b0l5mr454g2he"]
+
+[ext_resource type="Script" path="res://levels/Level.gd" id="1_joihv"]
+[ext_resource type="PackedScene" uid="uid://dyk36846dkjdd" path="res://BallGenerator.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://8poe5hkfli21" path="res://levels/GameLevels/levelWalls.png" id="3"]
+[ext_resource type="PackedScene" uid="uid://tyw88vtsnixb" path="res://Bubble/Bubble.tscn" id="4"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(506.4, 107.977)
+
+[node name="current_level" type="Node"]
+script = ExtResource("1_joihv")
+
+[node name="BallGenerator" parent="." instance=ExtResource("2")]
+position = Vector2(50, 62)
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -1
+texture = ExtResource("3")
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Background"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/StaticBody2D"]
+position = Vector2(160.332, 684.062)
+rotation = 0.51275
+shape = SubResource("1")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Background/StaticBody2D"]
+position = Vector2(116.307, 1452.19)
+rotation = 0.51275
+shape = SubResource("1")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Background/StaticBody2D"]
+position = Vector2(618.922, 1116.26)
+rotation = -0.524125
+shape = SubResource("1")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Background/StaticBody2D"]
+position = Vector2(1091.5, 1194.1)
+rotation = -0.524125
+shape = SubResource("1")
+
+[node name="Bubble" parent="." instance=ExtResource("4")]
+position = Vector2(200, 1260)
+
+[node name="Bubble3" parent="." instance=ExtResource("4")]
+position = Vector2(540, 1700)
+
+[node name="Bubble2" parent="." instance=ExtResource("4")]
+position = Vector2(720, 1420)
+
+[node name="Bubble4" parent="." instance=ExtResource("4")]
+position = Vector2(572, 702)
+
+[node name="Bubble13" parent="." instance=ExtResource("4")]
+position = Vector2(512, 702)
+
+[node name="Bubble14" parent="." instance=ExtResource("4")]
+position = Vector2(572, 602)
+
+[node name="Bubble15" parent="." instance=ExtResource("4")]
+position = Vector2(632, 602)
+
+[node name="Bubble19" parent="." instance=ExtResource("4")]
+position = Vector2(602, 552)
+
+[node name="Bubble16" parent="." instance=ExtResource("4")]
+position = Vector2(572, 802)
+
+[node name="Bubble17" parent="." instance=ExtResource("4")]
+position = Vector2(632, 802)
+
+[node name="Bubble18" parent="." instance=ExtResource("4")]
+position = Vector2(602, 852)
+
+[node name="Bubble5" parent="." instance=ExtResource("4")]
+position = Vector2(662, 652)
+
+[node name="Bubble6" parent="." instance=ExtResource("4")]
+position = Vector2(632, 702)
+
+[node name="Bubble7" parent="." instance=ExtResource("4")]
+position = Vector2(692, 702)
+
+[node name="Bubble8" parent="." instance=ExtResource("4")]
+position = Vector2(542, 752)
+
+[node name="Bubble9" parent="." instance=ExtResource("4")]
+position = Vector2(602, 752)
+
+[node name="Bubble10" parent="." instance=ExtResource("4")]
+position = Vector2(662, 752)
+
+[node name="Bubble11" parent="." instance=ExtResource("4")]
+position = Vector2(602, 652)
+
+[node name="Bubble12" parent="." instance=ExtResource("4")]
+position = Vector2(542, 652)
