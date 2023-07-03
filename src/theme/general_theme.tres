@@ -1,0 +1,11 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://ehwqj083d4h"]
+
+[ext_resource type="FontFile" uid="uid://4qgnbq4mcado" path="res://theme/kirifont/KiriFont.ttf" id="1_wysxd"]
+
+[resource]
+Button/font_sizes/font_size = 53
+Button/fonts/font = ExtResource("1_wysxd")
+Label/font_sizes/font_size = 32
+Label/fonts/font = ExtResource("1_wysxd")
+LinkButton/font_sizes/font_size = 32
+LinkButton/fonts/font = ExtResource("1_wysxd")

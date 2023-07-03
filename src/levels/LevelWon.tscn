@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://cjj56yvhm323g"]
+[gd_scene load_steps=9 format=3 uid="uid://cjj56yvhm323g"]
 
 [ext_resource type="Script" path="res://levels/LevelWon.gd" id="1_2frxv"]
 [ext_resource type="Texture2D" uid="uid://dc01qx7uo34s6" path="res://img/background_gray.png" id="2"]
+[ext_resource type="Theme" uid="uid://ehwqj083d4h" path="res://theme/general_theme.tres" id="3_nu276"]
 [ext_resource type="Texture2D" uid="uid://mvsqwtvaym6n" path="res://img/stars_0.png" id="4"]
 [ext_resource type="Texture2D" uid="uid://bp1lvgo1mwf05" path="res://img/stars_1.png" id="5"]
 [ext_resource type="Texture2D" uid="uid://b5tyjn1kbjham" path="res://img/stars_2.png" id="6"]
@@ -36,9 +37,10 @@ texture = ExtResource("2")
 centered = false
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-offset_top = 100.0
+offset_top = 120.0
 offset_right = 1080.0
-offset_bottom = 747.0
+offset_bottom = 767.0
+theme = ExtResource("3_nu276")
 
 [node name="game_over_msg" type="Label" parent="VBoxContainer"]
 layout_mode = 2

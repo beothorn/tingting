@@ -1,0 +1,5 @@
+Privacy Policy
+
+This game is distributed under the apache 2.0 license.
+
+No data is sent to any service whatsoever.

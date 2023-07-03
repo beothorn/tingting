@@ -10,6 +10,7 @@ func _ready():
 	var level_count: int = game_controller.level_count()
 	
 	var vBox: VBoxContainer  = VBoxContainer.new()
+	vBox.theme = preload("res://theme/general_theme.tres")
 	vBox.set_position(Vector2(70, 120))
 	vBox.set_size(Vector2(button_icon.get_width() * levels_per_row , button_icon.get_height() * (level_count/float(levels_per_row)) ))
 	var currentHBox
