@@ -14,6 +14,8 @@ var balls_count: int = 0
 @export var float_speed: float = 128
 @export var game_over_line_pos_y: int = 100
 
+var save_game_file: String = "user://save_game.save"
+
 var levels: Array[PackedScene] = [ preload("res://levels/GameLevels/HelloWorld.tscn"),
 	preload("res://levels/GameLevels/HelloWorld2.tscn"),
 	preload("res://levels/GameLevels/HelloWorld3.tscn"),
@@ -22,7 +24,7 @@ var levels: Array[PackedScene] = [ preload("res://levels/GameLevels/HelloWorld.t
 	preload("res://levels/GameLevels/DebugLevel.tscn")
 ]
 
-var level_enabled: Array[bool] = [true,false,false,false,false,false,false,false,false]
+var level_enabled: int = 0
 
 var main_menu: PackedScene = preload("res://levels/MainMenu.tscn")
 var game_over: PackedScene = preload("res://levels/GameOver.tscn")
@@ -42,11 +44,7 @@ func level_count() -> int:
 	return levels.size()
 
 func is_level_locked(level_index) -> bool:
-	if(level_index == 0):
-		return false
-	if(level_enabled.size() <=  level_index):
-		return true   
-	return !level_enabled[level_index]
+	return level_index > level_enabled
 
 func on_ball_creation():
 	balls_count += 1
@@ -75,14 +73,17 @@ func on_ball_dead() -> void:
 
 func unlock_next_level() -> void:
 	var next_level_index = (current_level + 1) % levels.size()
-	level_enabled[next_level_index] = true
+	level_enabled = next_level_index
 	save_game()
 
 func save_game():
-	pass
+	var file = FileAccess.open(save_game_file, FileAccess.WRITE)
+	file.store_32(level_enabled)
 
 func load_game():
-	pass
+	if FileAccess.file_exists(save_game_file):
+		var file = FileAccess.open(save_game_file, FileAccess.READ)
+		level_enabled = file.get_32()
 
 func go_to_level(level: int) -> void:
 	balls_count = 0
