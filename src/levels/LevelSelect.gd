@@ -53,8 +53,10 @@ func _notification(what):
 		game_controller.go_to_main_menu()
 
 func _input(ev):
-	if ev is InputEventKey and ev.scancode == KEY_ESCAPE:
-		game_controller.go_to_main_menu()
+	if ev is InputEventKey:
+		var iek: InputEventKey = ev 
+		if iek.keycode == KEY_ESCAPE:
+			game_controller.go_to_main_menu()
 
 func _on_level_pressed(level):
 	game_controller.go_to_level(level)

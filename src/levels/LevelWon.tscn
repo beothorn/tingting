@@ -46,6 +46,7 @@ theme = ExtResource("3_nu276")
 layout_mode = 2
 size_flags_vertical = 3
 text = "Level Cleared!"
+horizontal_alignment = 1
 
 [node name="score" type="Container" parent="VBoxContainer"]
 custom_minimum_size = Vector2(0, 100)
@@ -54,9 +55,9 @@ size_flags_vertical = 3
 mouse_filter = 0
 
 [node name="stars" type="AnimatedSprite2D" parent="VBoxContainer/score"]
-scale = Vector2(0.2, 0.2)
+position = Vector2(540, 5)
+scale = Vector2(0.396, 0.396)
 sprite_frames = SubResource("1")
-centered = false
 
 [node name="next_level" type="Button" parent="VBoxContainer"]
 layout_mode = 2

@@ -44,57 +44,141 @@ shape = SubResource("1")
 
 [node name="Bubble" parent="." instance=ExtResource("4")]
 position = Vector2(200, 1260)
+hit_count = 3
 
 [node name="Bubble3" parent="." instance=ExtResource("4")]
 position = Vector2(540, 1700)
+content_type = 2
 
 [node name="Bubble2" parent="." instance=ExtResource("4")]
 position = Vector2(720, 1420)
+content_type = 3
+hit_count = 6
 
 [node name="Bubble4" parent="." instance=ExtResource("4")]
 position = Vector2(572, 702)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
 
 [node name="Bubble13" parent="." instance=ExtResource("4")]
 position = Vector2(512, 702)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
 
 [node name="Bubble14" parent="." instance=ExtResource("4")]
 position = Vector2(572, 602)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
 
 [node name="Bubble15" parent="." instance=ExtResource("4")]
 position = Vector2(632, 602)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
 
 [node name="Bubble19" parent="." instance=ExtResource("4")]
 position = Vector2(602, 552)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
 
 [node name="Bubble16" parent="." instance=ExtResource("4")]
 position = Vector2(572, 802)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
 
 [node name="Bubble17" parent="." instance=ExtResource("4")]
 position = Vector2(632, 802)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
 
 [node name="Bubble18" parent="." instance=ExtResource("4")]
 position = Vector2(602, 852)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
 
 [node name="Bubble5" parent="." instance=ExtResource("4")]
 position = Vector2(662, 652)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
 
 [node name="Bubble6" parent="." instance=ExtResource("4")]
 position = Vector2(632, 702)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
 
 [node name="Bubble7" parent="." instance=ExtResource("4")]
 position = Vector2(692, 702)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
 
 [node name="Bubble8" parent="." instance=ExtResource("4")]
 position = Vector2(542, 752)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
 
 [node name="Bubble9" parent="." instance=ExtResource("4")]
 position = Vector2(602, 752)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
 
 [node name="Bubble10" parent="." instance=ExtResource("4")]
 position = Vector2(662, 752)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
 
 [node name="Bubble11" parent="." instance=ExtResource("4")]
 position = Vector2(602, 652)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false
 
 [node name="Bubble12" parent="." instance=ExtResource("4")]
 position = Vector2(542, 652)
+size = 0
+content_type = 0
+hit_count = 1
+retrieve_content = true
+show_counter = false

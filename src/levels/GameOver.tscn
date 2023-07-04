@@ -22,6 +22,7 @@ theme = ExtResource("3_cx0vf")
 layout_mode = 2
 size_flags_vertical = 3
 text = "Oh no!"
+horizontal_alignment = 1
 
 [node name="try_again" type="Button" parent="VBoxContainer"]
 layout_mode = 2

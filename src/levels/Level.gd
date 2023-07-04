@@ -7,7 +7,7 @@ class_name Level
 
 @onready var game_controller: World = $"/root/World"
 @onready var ball_gen: BallGenerator = $BallGenerator
-@onready var background: Sprite2D = $Background
+@onready var background: Node2D = $Background
 
 var try_count: int = 0
 
@@ -23,8 +23,10 @@ func _notification(what):
 		game_controller.go_to_level_selection()
 
 func _input(ev):
-	if ev is InputEventKey and ev.scancode == KEY_ESCAPE:
-		game_controller.go_to_level_selection()
+	if ev is InputEventKey:
+		var iek: InputEventKey = ev 
+		if iek.keycode == KEY_ESCAPE:
+			game_controller.go_to_level_selection()
 
 func init_level(w: World):
 	print("DRAW")

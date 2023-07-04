@@ -20,6 +20,7 @@ var levels: Array[PackedScene] = [ preload("res://levels/GameLevels/HelloWorld.t
 	preload("res://levels/GameLevels/HelloWorld2.tscn"),
 	preload("res://levels/GameLevels/HelloWorld3.tscn"),
 	preload("res://levels/GameLevels/HelloWorld4.tscn"),
+	preload("res://levels/GameLevels/FirstLevel.tscn"),
 	preload("res://levels/GameLevels/LevelWalls.tscn"),
 	preload("res://levels/GameLevels/DebugLevel.tscn")
 ]

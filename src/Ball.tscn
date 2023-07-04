@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://1f3vxwwgucw7" path="res://balls/ball_orange_green_star.png" id="4"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_n56ep"]
-bounce = 0.62
+bounce = 0.82
 
 [sub_resource type="CircleShape2D" id="1"]
 radius = 13.6631

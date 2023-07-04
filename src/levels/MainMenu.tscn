@@ -46,6 +46,7 @@ theme = ExtResource("3_ijyx1")
 layout_mode = 2
 size_flags_vertical = 1
 text = "Ting Ting"
+horizontal_alignment = 1
 
 [node name="ChooseLevelBtn" type="Button" parent="VBoxContainer"]
 layout_mode = 2
