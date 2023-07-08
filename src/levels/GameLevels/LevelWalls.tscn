@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://b0l5mr454g2he"]
 
-[ext_resource type="Script" path="res://levels/Level.gd" id="1_joihv"]
+[ext_resource type="Script" path="res://levels/Level.gd" id="1_4msvd"]
 [ext_resource type="PackedScene" uid="uid://dyk36846dkjdd" path="res://BallGenerator.tscn" id="2"]
 [ext_resource type="Texture2D" uid="uid://8poe5hkfli21" path="res://levels/GameLevels/levelWalls.png" id="3"]
 [ext_resource type="PackedScene" uid="uid://tyw88vtsnixb" path="res://Bubble/Bubble.tscn" id="4"]
@@ -9,7 +9,7 @@
 size = Vector2(506.4, 107.977)
 
 [node name="current_level" type="Node"]
-script = ExtResource("1_joihv")
+script = ExtResource("1_4msvd")
 
 [node name="BallGenerator" parent="." instance=ExtResource("2")]
 position = Vector2(50, 62)

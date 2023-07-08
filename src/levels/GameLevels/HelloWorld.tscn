@@ -1,12 +1,12 @@
 [gd_scene load_steps=5 format=3 uid="uid://cryu4anmniaub"]
 
-[ext_resource type="Script" path="res://levels/Level.gd" id="1_dxsfd"]
+[ext_resource type="Script" path="res://levels/Level.gd" id="1_0w0dt"]
 [ext_resource type="PackedScene" uid="uid://dyk36846dkjdd" path="res://BallGenerator.tscn" id="2"]
 [ext_resource type="Texture2D" uid="uid://4bdkcp1r66cs" path="res://levels/GameLevels/helloWorld.png" id="3"]
 [ext_resource type="PackedScene" uid="uid://tyw88vtsnixb" path="res://Bubble/Bubble.tscn" id="4"]
 
 [node name="current_level" type="Node"]
-script = ExtResource("1_dxsfd")
+script = ExtResource("1_0w0dt")
 
 [node name="Node2D" type="Node2D" parent="."]
 z_index = -1

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bl1kmnkhn1ntg"]
 
-[ext_resource type="Script" path="res://levels/Level.gd" id="1_srq4t"]
+[ext_resource type="Script" path="res://levels/Level.gd" id="1_dx6hh"]
 [ext_resource type="PackedScene" uid="uid://dyk36846dkjdd" path="res://BallGenerator.tscn" id="2_4s72o"]
 [ext_resource type="PackedScene" uid="uid://tyw88vtsnixb" path="res://Bubble/Bubble.tscn" id="4_aaps3"]
 
@@ -8,7 +8,7 @@
 size = Vector2(140, 140)
 
 [node name="current_level" type="Node"]
-script = ExtResource("1_srq4t")
+script = ExtResource("1_dx6hh")
 
 [node name="Background" type="Node2D" parent="."]
 z_index = -1
