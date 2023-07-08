@@ -116,6 +116,7 @@ func hit(_ball: Ball) -> void:
 		return
 	var bba: BubbleBurst = bubble_burst_animation.instantiate()
 	get_tree().get_root().add_child(bba)
+	game_controller.play_pop_sound()
 	bba.animate_on(self.position, actual_size)
 	if content_type == BUBBLE_CONTENT.extra_ball:
 		game_controller.extra_ball()

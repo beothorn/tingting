@@ -21,6 +21,7 @@ var levels: Array[PackedScene] = [ preload("res://levels/GameLevels/HelloWorld.t
 	preload("res://levels/GameLevels/HelloWorld3.tscn"),
 	preload("res://levels/GameLevels/HelloWorld4.tscn"),
 	preload("res://levels/GameLevels/FirstLevel.tscn"),
+	preload("res://levels/GameLevels/SecondLevel.tscn"),
 	preload("res://levels/GameLevels/LevelWalls.tscn"),
 	preload("res://levels/GameLevels/DebugLevel.tscn")
 ]
@@ -144,3 +145,12 @@ func on_bubble_above_line() -> void:
 	if(OS.has_feature("editor")):
 		print("_go_to_level called")
 	_go_to_level(game_over)
+	
+func play_pop_sound() -> void:
+	var play_it: AudioStreamPlayer = $AudioStreamPlayer.duplicate()
+	add_child(play_it)
+	play_it.play()
+	play_it.finished.connect(remove_node.bind(play_it))
+	
+func remove_node(node: AudioStreamPlayer) -> void:
+	remove_child(node)

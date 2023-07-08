@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://n0g03rwa33kh"]
+[gd_scene load_steps=5 format=3 uid="uid://n0g03rwa33kh"]
 
 [ext_resource type="Script" path="res://world.gd" id="1"]
+[ext_resource type="AudioStream" uid="uid://2bdeeiw350v7" path="res://Bubble/pop1.ogg" id="2_4mj6i"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(232.344, 3424.42)
@@ -22,3 +23,6 @@ shape = SubResource("1")
 [node name="right_wall" type="CollisionShape2D" parent="Walls"]
 position = Vector2(1300, 0)
 shape = SubResource("2")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_4mj6i")
